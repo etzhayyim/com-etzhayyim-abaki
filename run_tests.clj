@@ -1,0 +1,9 @@
+#!/usr/bin/env bb
+(require '[clojure.test :as t]
+         'abaki.methods.test-analyze
+         'abaki.methods.test-live
+         'abaki.methods.test-survival-tree)
+(let [result (t/run-tests 'abaki.methods.test-analyze
+                          'abaki.methods.test-live
+                          'abaki.methods.test-survival-tree)]
+  (System/exit (if (t/successful? result) 0 1)))

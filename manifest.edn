@@ -1,0 +1,37 @@
+{:actor/id "abaki"
+ :actor/glyph "暴"
+ :actor/category :observation-policy
+ :actor/status :r0
+ :actor/adr "2606073100"
+ :actor/canonical-format :edn
+ :actor/purpose "Public-evidence chokepoint observation and structural route-around policy; never punishment or attack."
+ :actor/gates
+ [{:id :route-around-not-punishment}
+  {:id :map-not-target}
+  {:id :public-evidence-only}
+  {:id :member-signed-outward-publication}
+  {:id :no-server-key}]
+ :actor/methods
+ [{:id :analyze :file "src/abaki/methods/analyze.cljc"}
+  {:id :ingest-intel :file "src/abaki/methods/ingest_intel.cljc"}
+  {:id :live-gate :file "src/abaki/methods/live_gate.cljc"}
+  {:id :react-router :file "src/abaki/methods/react_router.cljc"}
+  {:id :mesh :file "src/abaki/methods/mesh.clj"}]
+ :actor/data {:seed "data/seed.edn"
+              :generated-policy "out/routing-policy.edn"
+              :generated-analysis "out/analysis.edn"}
+ :actor/repository-contracts
+ [{:id :intel :repository "https://github.com/etzhayyim/com-etzhayyim-intel"
+   :revision "1032169f79b99e164b91c2ec4b924f7c6261467b" :role :public-osint-source}
+  {:id :suki :repository "https://github.com/etzhayyim/com-etzhayyim-suki"
+   :revision "f01615cb1ffac027403a2fd8e921787a45d7a131" :role :biology-route-around}
+  {:id :wadachi :repository "https://github.com/etzhayyim/com-etzhayyim-wadachi"
+   :revision "44fb5f545c17ba09ad02da501fac42a63c1124bc" :role :logistics-route-around}
+  {:id :ameno :repository "https://github.com/etzhayyim/com-etzhayyim-ameno"
+   :revision "2ca2288013fe8c62b370fef736f60085baec860f" :role :compute-route-around}]
+ :actor/retired-assumptions
+ [{:id :amenominaka :reason :no-independent-repository-and-no-code-reference}
+  {:id :json-policy :replacement "out/routing-policy.edn"}
+  {:id :markdown-report :replacement "out/analysis.edn"}]
+ :actor/tests {:runner :babashka :command "bb test" :suites 3
+               :tests 16 :assertions 47}}
