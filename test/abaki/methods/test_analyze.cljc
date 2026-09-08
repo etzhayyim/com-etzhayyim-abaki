@@ -3,7 +3,7 @@
   analyze.py has no test_analyze.py; these assertions pin the analyzer's behaviour to the
   Python reference output captured on the committed seed (byte-parity gate)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [abaki.methods.analyze :as a]))
 
 ;; ── calculate-ci ─────────────────────────────────────────────────────────────
