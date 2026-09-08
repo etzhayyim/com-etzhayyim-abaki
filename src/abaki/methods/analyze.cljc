@@ -1,6 +1,6 @@
 (ns abaki.methods.analyze
   "abaki anti-monopoly observation and route-around policy analysis."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [abaki.methods.live-gate :as lg]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))

@@ -9,7 +9,7 @@
   no branch, and that the branches compose — so a regression dropping or mis-wiring a fallback is
   caught."
   (:require [abaki.methods.react-router :as r]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (defn- policy [& domains] {"blocked_entities" (mapv (fn [d] {"domain" d}) domains)})

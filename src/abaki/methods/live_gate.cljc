@@ -24,7 +24,7 @@
   member signature (NOT a server/synthetic credential) are ALL presented.
 
   House style: ':…' strings stay strings; closed-vocab/gate → ex-info. Portable .cljc."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; The single live leg: the route-around broadcast / Datom publish. Operator process flag +
 ;; minimum Council level.
@@ -53,7 +53,7 @@
 ;; A real member signature must be a member-signed capability, never one of these.
 (defn- server-or-blank-signer? [sig]
   (let [s (str/trim (str sig))
-        l (str/lower-case s)]
+        l (str/lower s)]
     (or (str/blank? s)
         (= l "anon")
         (str/includes? l "server")

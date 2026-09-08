@@ -1,4 +1,5 @@
-(ns abaki.methods.react-router)
+(ns abaki.methods.react-router
+  (:require [kotoba.lang.text]))
 
 (defn simulate-murakumo-compute-routing
   "Intercepting request... Pure Clojure mirror of simulate_murakumo_compute_routing."
@@ -34,5 +35,5 @@
     (str "\n[Ossekai Survival Simulator] Generating survival tree...\n"
          "Survival Branches Activated:\n"
          (when (seq branches)
-           (str (clojure.string/join "\n" branches) "\n"))
+           (str (kotoba.lang.text/join "\n" branches) "\n"))
          "Ossekai simulation updated to reflect the new Charter-aligned constraints.")))

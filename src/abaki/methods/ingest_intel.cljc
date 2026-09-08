@@ -15,7 +15,7 @@
   fns; file/host I/O only behind #?(:clj ...). The Python `__main__` demo printer is omitted —
   the method API (fetch-from-intel / ingest-to-abaki / merge-intel) is the cell contract;
   -main mirrors the demo at the #?(:clj) edge."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 
