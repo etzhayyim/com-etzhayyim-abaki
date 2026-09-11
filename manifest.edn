@@ -12,11 +12,11 @@
   {:id :member-signed-outward-publication}
   {:id :no-server-key}]
  :actor/methods
- [{:id :analyze :file "src/abaki/methods/analyze.cljc"}
-  {:id :ingest-intel :file "src/abaki/methods/ingest_intel.cljc"}
-  {:id :live-gate :file "src/abaki/methods/live_gate.cljc"}
-  {:id :react-router :file "src/abaki/methods/react_router.cljc"}
-  {:id :mesh :file "src/abaki/methods/mesh.clj"}]
+ [{:id :analyze :file "src/abaki/methods/analyze.cljk"}
+  {:id :ingest-intel :file "src/abaki/methods/ingest_intel.cljk"}
+  {:id :live-gate :file "src/abaki/methods/live_gate.cljk"}
+  {:id :react-router :file "src/abaki/methods/react_router.cljk"}
+  {:id :mesh :file "src/abaki/methods/mesh.cljk"}]
  :actor/data {:seed "data/seed.edn"
               :generated-policy "out/routing-policy.edn"
               :generated-analysis "out/analysis.edn"}
