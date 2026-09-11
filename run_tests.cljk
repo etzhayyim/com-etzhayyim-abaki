@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 (require '[clojure.test :as t]
          'abaki.methods.test-analyze
          'abaki.methods.test-live
