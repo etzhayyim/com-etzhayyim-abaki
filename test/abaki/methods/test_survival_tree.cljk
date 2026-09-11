@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; abaki 暴 — validation of the ossekai survival-tree route-around planner.
 ;; Run: bb test
 (ns abaki.methods.test-survival-tree

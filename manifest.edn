@@ -33,5 +33,5 @@
  [{:id :amenominaka :reason :no-independent-repository-and-no-code-reference}
   {:id :json-policy :replacement "out/routing-policy.edn"}
   {:id :markdown-report :replacement "out/analysis.edn"}]
- :actor/tests {:runner :babashka :command "bb test" :suites 3
+ :actor/tests {:runner :babashka :command "kbb -M:test" :suites 3
                :tests 16 :assertions 47}}
