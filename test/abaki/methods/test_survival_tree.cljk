@@ -10,7 +10,7 @@
   caught."
   (:require [abaki.methods.react-router :as r]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 (defn- policy [& domains] {"blocked_entities" (mapv (fn [d] {"domain" d}) domains)})
 

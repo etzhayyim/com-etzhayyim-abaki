@@ -9,7 +9,7 @@
   the route-around publish REFUSES by default and emits ONLY when a MEMBER presents the full
   capability (operator flag + operator attestation + Council Lv6+ + a real member signature),
   with the publish attributed to that member — never a synthetic server-held identity."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [abaki.methods.live-gate :as lg]
             [abaki.methods.analyze :as a]))
 
