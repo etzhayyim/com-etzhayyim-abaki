@@ -2,7 +2,7 @@
   "abaki anti-monopoly observation and route-around policy analysis."
   (:require [kotoba.lang.text :as str]
             [abaki.methods.live-gate :as lg]
-            #?(:clj [clojure.edn :as edn])
+            #?(:clj [kotoba.lang.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 
 (def weights

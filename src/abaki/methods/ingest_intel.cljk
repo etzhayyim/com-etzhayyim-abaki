@@ -16,7 +16,7 @@
   the method API (fetch-from-intel / ingest-to-abaki / merge-intel) is the cell contract;
   -main mirrors the demo at the #?(:clj) edge."
   (:require [kotoba.lang.text :as str]
-            #?(:clj [clojure.edn :as edn])
+            #?(:clj [kotoba.lang.edn :as edn])
             #?(:clj [clojure.java.io :as io])))
 
 (defn fetch-from-intel
