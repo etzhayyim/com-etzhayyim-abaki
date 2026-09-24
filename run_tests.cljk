@@ -1,5 +1,5 @@
 #!/usr/bin/env kbb
-(require '[clojure.test :as t]
+(require '[kotoba.test :as t]
          'abaki.methods.test-analyze
          'abaki.methods.test-live
          'abaki.methods.test-survival-tree)

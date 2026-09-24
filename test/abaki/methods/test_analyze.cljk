@@ -2,7 +2,7 @@
   "Tests for 暴 (abaki) analyze.cljc — Chokepoint Index + report/routing parity (clojure.test).
   analyze.py has no test_analyze.py; these assertions pin the analyzer's behaviour to the
   Python reference output captured on the committed seed (byte-parity gate)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [abaki.methods.analyze :as a]))
 
