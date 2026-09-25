@@ -3,7 +3,7 @@
   (:require [kotoba.lang.text :as str]
             [abaki.methods.live-gate :as lg]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (def weights
   {"closed_source_models" 30 "proprietary_hardware_lockin" 40
@@ -21,7 +21,7 @@
   ([routing-policy gate] (publish-live routing-policy gate nil))
   ([routing-policy gate env]
    (let [refused (try (lg/require-gate gate env) nil
-                      (catch #?(:clj clojure.lang.ExceptionInfo :cljs :default) e
+                      (catch :default e
                         (if (= (:abaki.methods.live-gate/kind (ex-data e)) lg/live-gate-refused)
                           e (throw e))))]
      (if refused
@@ -62,7 +62,7 @@
      (let [data (edn/read-string (slurp "data/seed.edn"))
            result (analyze (get data "entities"))
            out-dir (io/file "out")]
-       (.mkdirs out-dir)
+       (io/mkdirs out-dir)
        (spit (io/file out-dir "analysis.edn") (str (pr-str result) "\n"))
        (spit (io/file out-dir "routing-policy.edn")
              (str (pr-str (:routing-policy result)) "\n"))

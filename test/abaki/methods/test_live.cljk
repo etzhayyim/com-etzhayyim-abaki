@@ -9,7 +9,7 @@
   the route-around publish REFUSES by default and emits ONLY when a MEMBER presents the full
   capability (operator flag + operator attestation + Council Lv6+ + a real member signature),
   with the publish attributed to that member — never a synthetic server-held identity."
-  (:require [kotoba.test :refer [deftest is]]
+  (:require [kotoba.lang.error :as kerror] [kotoba.test :refer [deftest is]]
             [abaki.methods.live-gate :as lg]
             [abaki.methods.analyze :as a]))
 
@@ -37,7 +37,7 @@
 (deftest test-gate-refuses-without-member-capability
   (let [bare (lg/make-live-gate)]
     (is (false? (get (lg/gate-status bare) "admissible")))
-    (is (thrown? clojure.lang.ExceptionInfo (lg/require-gate bare)))
+    (is (thrown? kerror/ExceptionInfo (lg/require-gate bare)))
     ;; even with the operator flag, a bare gate (no attestation / council / member sig) refuses
     (is (false? (get (lg/gate-status bare allow-env) "admissible")))
     ;; a synthetic server-held signature is refused as a signer
@@ -45,7 +45,7 @@
                                         :council-level 6
                                         :member-signature "autonomous_system_signature"})]
       (is (false? (get (lg/gate-status synthetic allow-env) "admissible")))
-      (is (thrown? clojure.lang.ExceptionInfo (lg/require-gate synthetic allow-env))))
+      (is (thrown? kerror/ExceptionInfo (lg/require-gate synthetic allow-env))))
     ;; the full member capability admits, and gate-status ≡ require-gate on success
     (is (true? (get (lg/gate-status member-gate allow-env) "admissible")))
     (is (= (lg/gate-status member-gate allow-env) (lg/require-gate member-gate allow-env)))))

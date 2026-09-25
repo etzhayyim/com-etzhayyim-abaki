@@ -17,7 +17,7 @@
   -main mirrors the demo at the #?(:clj) edge."
   (:require [kotoba.lang.text :as str]
             #?(:clj [kotoba.lang.edn :as edn])
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn fetch-from-intel
   "Mock integration with the `intel` actor's OSINT pipeline. In a real implementation this
@@ -84,7 +84,7 @@
      (let [data-file (io/file "data" "seed.edn")]
        (println (str "[abaki Ingest] Merging " (count intel-data)
                      " OSINT intelligence records into abaki dataset..."))
-       (let [existing-data (if (.exists data-file)
+       (let [existing-data (if (io/exists? data-file)
                              (edn/read-string (slurp data-file))
                              {"entities" []})
              updated-data  (merge-intel existing-data intel-data)]
