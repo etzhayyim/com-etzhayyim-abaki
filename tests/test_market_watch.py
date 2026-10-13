@@ -20,13 +20,16 @@ class EvidenceTests(unittest.TestCase):
 
     def test_real_cases_build_without_inventing_shares(self):
         with tempfile.TemporaryDirectory() as tmp:
-            cases = w.build(ROOT/'evidence/cases', tmp, self.catalog, TODAY)
+            inputs=Path(tmp)/'inputs';inputs.mkdir()
+            for name in ('au-supermarket-retailing','us-google-general-search','eea-google-publisher-ad-servers'):
+                (inputs/(name+'.json')).write_bytes((ROOT/'evidence/cases'/(name+'.json')).read_bytes())
+            cases = w.build(inputs, Path(tmp)/'reports', self.catalog, TODAY)
             self.assertEqual(len(cases), 3)
             self.assertTrue(all(c['metrics']['hhi'] is None for c in cases))
-            coverage = w.load(Path(tmp)/'coverage.json')
+            coverage = w.load(Path(tmp)/'reports/coverage.json')
             self.assertEqual(len(coverage['cells']), 251*21)
             self.assertEqual(sum(c['status']=='has-evidence-case' for c in coverage['cells']), 3)
-            self.assertFalse(w.load(Path(tmp)/'receipt.json')['remote_publication_verified'])
+            self.assertFalse(w.load(Path(tmp)/'reports/receipt.json')['remote_publication_verified'])
 
     def test_missing_claim_evidence_refused(self):
         self.case['claims'][0]['source_refs'] = ['invented']

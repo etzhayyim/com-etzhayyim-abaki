@@ -38,3 +38,9 @@ data/seed.edn remain legacy simulation fixtures. The new reporting pipeline
 does not produce a supplier blocklist, call mesh, or bypass the existing
 member-signed outward-action gate. Repository publication happens through
 authorized commits/PRs; local artifact receipts explicitly say unpublished.
+
+For the deployed periodic research pipeline, see [live operation](docs/live-operation.md).
+It performs a bounded Itonami research turn, verifies quoted evidence against the
+original, rotates the global frontier and publishes report-only changes to the
+public [`abaki-reports` branch](https://github.com/etzhayyim/com-etzhayyim-abaki/tree/abaki-reports/reports).
+Host adoption, dispatch and immutable public readback must be verified separately.
