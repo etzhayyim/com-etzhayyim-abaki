@@ -49,3 +49,13 @@ Be clear in Japanese and English. Publish attributed findings, primary-source
 links, calculation inputs, legal status, source dates and limitations. Retain
 superseded versions in Git and accept corrections through issues. Never claim
 global research completion from a queue or infer competition from missing data.
+
+When invoked by the deployed `live_tick.py` pipeline, the task is narrower:
+research only the assigned region/industry or overdue case, use web_search and
+web_extract, and write the requested proposal.json with write_file. Include a
+short exact supporting_excerpt from every original source. Do not invoke git,
+run code, edit schedules or publish from this research turn. The trusted host
+publisher performs validation, original-source readback, report generation and
+publication afterward. A no-evidence outcome must cite actually read sources and
+must never infer competition from the absence of evidence. This scheduled-mode
+contract supersedes the manual queue/build/publication steps for that turn.

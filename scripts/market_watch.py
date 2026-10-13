@@ -152,6 +152,7 @@ def markdown(case):
     text += [f'- [{s["id"]}: {s["title"]}]({s["url"]}) — {s["publisher"]}, {s["kind"]}; '
              f'published {s["published_on"]}; accessed {s["accessed_on"]}; locator: {s["locator"]}'
              for s in case["sources"]]
+    text += [f'  Verified source excerpt: “{s["supporting_excerpt"]}”' for s in case["sources"] if s.get('supporting_excerpt')]
     text += ['', f'Input SHA-256: `{case["input_sha256"]}`', '']
     return '\n'.join(text)
 
