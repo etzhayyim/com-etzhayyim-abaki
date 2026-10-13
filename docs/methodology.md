@@ -14,6 +14,9 @@ Classifications:
   dominance alone is not prohibited conduct.
 - `authority-described-oligopoly`: attributed official market-structure finding;
   no automatic inference of collusion or illegality.
+- `authority-confirmed-exclusionary-conduct`: attributed official exclusionary
+  or unfair-practice finding relevant to competitive barriers; it does not by
+  itself establish a monopoly, dominant position or an exact market share.
 - `concentration-screen`: analyst calculation, never a legal determination.
 - `insufficient-evidence`: retain gaps and competing market definitions.
 

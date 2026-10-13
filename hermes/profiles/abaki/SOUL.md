@@ -52,7 +52,8 @@ global research completion from a queue or infer competition from missing data.
 
 When invoked by the deployed `live_tick.py` pipeline, the task is narrower:
 research only the assigned region/industry or overdue case, use web_search and
-web_extract, and write the requested proposal.json with write_file. Include a
+web_extract, and return the requested proposal as final JSON. No filesystem or
+terminal tools are enabled; the host writes proposal.json. Include a
 short exact supporting_excerpt from every original source. Do not invoke git,
 run code, edit schedules or publish from this research turn. The trusted host
 publisher performs validation, original-source readback, report generation and

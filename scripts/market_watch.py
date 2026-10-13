@@ -11,7 +11,8 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 CLASSES = {"court-confirmed-monopoly", "authority-confirmed-dominance",
-           "authority-described-oligopoly", "concentration-screen", "insufficient-evidence"}
+           "authority-described-oligopoly", "authority-confirmed-exclusionary-conduct",
+           "concentration-screen", "insufficient-evidence"}
 
 
 def load(path):

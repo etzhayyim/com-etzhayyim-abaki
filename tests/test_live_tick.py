@@ -46,5 +46,10 @@ class LiveTests(unittest.TestCase):
         def refuse(source):raise ValueError('Supporting excerpt absent')
         with self.assertRaisesRegex(ValueError,'excerpt absent'):
             live.validate_proposal(proposal,task,self.catalog,self.today,watch,fetch=refuse)
+    def test_malformed_agent_output_cannot_become_a_proposal(self):
+        self.assertEqual(live.parse_agent_proposal('```json\n{"status":"no-evidence"}\n```')['status'],'no-evidence')
+        for value in ['report complete','[]','{"status":"finding"}\nextra text']:
+            with self.assertRaises((ValueError,live.json.JSONDecodeError)):
+                live.parse_agent_proposal(value)
 
 if __name__=='__main__':unittest.main()

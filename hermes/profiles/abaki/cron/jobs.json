@@ -1,0 +1,21 @@
+{
+  "jobs": [
+    {
+      "id": "d09e2d902ee8",
+      "name": "abaki-global-market-watch",
+      "prompt": "Run the trusted abaki_tick.py pipeline. It performs one research turn and verified report publication. If Script Error is present, return [CRON_FAILURE] on the first line and explain the failure; never claim publication. Otherwise do not run a second research turn or change schedules.",
+      "schedule": {
+        "kind": "interval",
+        "minutes": 360,
+        "display": "every 360m"
+      },
+      "script": "abaki_tick.py",
+      "deliver": "local",
+      "model": "mishima",
+      "provider": "itonami-p2p",
+      "enabled_toolsets": [
+        "web"
+      ]
+    }
+  ]
+}
