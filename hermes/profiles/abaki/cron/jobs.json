@@ -14,8 +14,7 @@
       "model": "mishima",
       "provider": "itonami-p2p",
       "enabled_toolsets": [
-        "web",
-        "file"
+        "web"
       ]
     }
   ]
