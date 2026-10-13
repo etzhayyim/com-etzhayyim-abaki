@@ -1,0 +1,80 @@
+{
+  "id": "au-supermarket-retailing",
+  "region": "AU",
+  "industry": "G",
+  "market": "Supermarket retailing",
+  "geographic_scope": "Australia; national inquiry scope",
+  "period": "ACCC 2024-25 inquiry, final report February 2025",
+  "denominator": "No compatible individual market shares extracted",
+  "classification": "authority-described-oligopoly",
+  "entities": [
+    {
+      "id": "woolworths",
+      "name": "Woolworths Group",
+      "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+      "control_group": "woolworths",
+      "source_refs": [
+        "accc-supermarkets-final"
+      ]
+    },
+    {
+      "id": "coles",
+      "name": "Coles Group",
+      "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+      "control_group": "coles",
+      "source_refs": [
+        "accc-supermarkets-final"
+      ]
+    },
+    {
+      "id": "aldi",
+      "name": "ALDI Australia",
+      "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+      "control_group": "aldi",
+      "source_refs": [
+        "accc-supermarkets-final"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "accc-supermarkets-final",
+      "url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+      "title": "ACCC recommends supermarket reforms to provide better outcomes for consumers and suppliers",
+      "publisher": "Australian Competition and Consumer Commission",
+      "published_on": "2025-03-21",
+      "accessed_on": "2026-10-13",
+      "kind": "competition-authority",
+      "locator": "Paragraph beginning oligopoly; final inquiry conclusions and barriers to entry"
+    }
+  ],
+  "claims": [
+    {
+      "text": "豪州競争当局はスーパー市場を寡占構造と説明し、ColesとWoolworthsによる支配と参入障壁を指摘した。 / ACCC describes an oligopoly dominated by Coles and Woolworths and barriers to entry.",
+      "source_refs": [
+        "accc-supermarkets-final"
+      ]
+    }
+  ],
+  "classification_refs": [
+    "accc-supermarkets-final"
+  ],
+  "classification_basis": {
+    "authority": "ACCC",
+    "decision_date": "2025-03-21",
+    "finding": "Supermarket sector described as an oligopoly in final inquiry publication",
+    "source_refs": [
+      "accc-supermarkets-final"
+    ]
+  },
+  "legal_status": {
+    "case_id": "",
+    "finality": "not-assessed",
+    "note": "Market inquiry, not a finding of unlawful oligopoly; separate pricing proceedings are not adjudicated here."
+  },
+  "limitations": "Local catchment markets may differ from the national inquiry. ALDI is included as a competitor, not declared to have committed an infringement.",
+  "reviewed_on": "2026-10-13",
+  "review_after_days": 30,
+  "shares": [],
+  "shares_complete": false
+}

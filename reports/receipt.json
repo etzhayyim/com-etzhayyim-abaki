@@ -1,0 +1,14 @@
+{
+  "schema": "abaki.artifact-receipt.v1",
+  "as_of": "2026-10-13",
+  "state": "generated-local-artifacts",
+  "remote_publication_verified": false,
+  "files": {
+    "README.md": "411338f4cbaf0773e69dd1fd7d5e85641ea9b87f0dc2b953ea8fdbf16ca142ac",
+    "findings.json": "5b0794a8f464e14c1fe29af9729308d164fb1c4fb107be79e07774b126b77c38",
+    "coverage.json": "cc23e5417dcdbd476ab1803aabd279678c4d94cc4fc9f9dddfad277fe0d4f960",
+    "au-supermarket-retailing.md": "42be9722fac78895f82f088d4db5cf8a1d69afc7008a3a7c0e721e56d9d53cc9",
+    "eea-google-publisher-ad-servers.md": "033da4927fa8656333f58b7bd64a6d6f598bbeb36f8589818d4fd8aeb3e0d79b",
+    "us-google-general-search.md": "d1343ce57df3fd0302d4c2f567a51dff6cc1071ac30dcbbc25d436f54cd9119b"
+  }
+}

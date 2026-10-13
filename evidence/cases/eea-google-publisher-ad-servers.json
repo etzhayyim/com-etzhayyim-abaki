@@ -1,0 +1,62 @@
+{
+  "id": "eea-google-publisher-ad-servers",
+  "region": "EEA",
+  "industry": "J",
+  "market": "Publisher ad servers (DFP)",
+  "geographic_scope": "European Economic Area",
+  "period": "European Commission decision of 5 September 2025",
+  "denominator": "No market shares extracted; publisher ad-server market only",
+  "classification": "authority-confirmed-dominance",
+  "entities": [
+    {
+      "id": "google",
+      "name": "Google (DFP)",
+      "identity_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/online-werbung-kommission-verhangt-fast-3-milliarden-euro-geldbusse-gegen-google-2025-09-08_de",
+      "control_group": "google",
+      "source_refs": [
+        "ec-adtech-decision"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ec-adtech-decision",
+      "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/online-werbung-kommission-verhangt-fast-3-milliarden-euro-geldbusse-gegen-google-2025-09-08_de",
+      "title": "Online-Werbung: Kommission verhängt fast 3 Milliarden Euro Geldbuße gegen Google",
+      "publisher": "European Commission Representation in Germany",
+      "published_on": "2025-09-08",
+      "accessed_on": "2026-10-13",
+      "kind": "competition-authority",
+      "locator": "Section Googles beherrschende Stellung: publisher ad servers and programmatic buying tools; both EEA-wide"
+    }
+  ],
+  "claims": [
+    {
+      "text": "欧州委員会はEEAの出版社向け広告サーバー市場におけるGoogleの支配的地位と、その濫用を認定したと公表した。 / The Commission reports dominance and abuse in the EEA publisher ad-server market.",
+      "source_refs": [
+        "ec-adtech-decision"
+      ]
+    }
+  ],
+  "classification_refs": [
+    "ec-adtech-decision"
+  ],
+  "classification_basis": {
+    "authority": "European Commission",
+    "decision_date": "2025-09-05",
+    "finding": "Attributed Commission finding of dominance and abuse, AT.40670",
+    "source_refs": [
+      "ec-adtech-decision"
+    ]
+  },
+  "legal_status": {
+    "case_id": "AT.40670",
+    "finality": "unknown",
+    "note": "Administrative decision; the current appeal and remedy-compliance status is not established by this source."
+  },
+  "limitations": "Publisher ad servers only. Programmatic buying tools are a separate relevant market; all advertising must not be aggregated into this case.",
+  "reviewed_on": "2026-10-13",
+  "review_after_days": 30,
+  "shares": [],
+  "shares_complete": false
+}

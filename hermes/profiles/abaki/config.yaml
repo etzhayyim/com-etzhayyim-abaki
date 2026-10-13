@@ -1,0 +1,6 @@
+agent:
+  max_turns: 60
+  run_budget_seconds: 900
+# Bind provider/model and the effective web/read/terminal tool policy on the host.
+# No credentials, automatic grant, or background job is embedded in this profile.
+toolsets: []

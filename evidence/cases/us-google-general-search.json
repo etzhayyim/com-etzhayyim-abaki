@@ -1,0 +1,69 @@
+{
+  "id": "us-google-general-search",
+  "region": "US",
+  "industry": "J",
+  "market": "General search services",
+  "geographic_scope": "United States",
+  "period": "Historical finding: August 2024 liability / September 2025 remedies",
+  "denominator": "Not measured in this case; general search service market",
+  "classification": "court-confirmed-monopoly",
+  "entities": [
+    {
+      "id": "google",
+      "name": "Google LLC",
+      "identity_url": "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google",
+      "control_group": "google",
+      "source_refs": [
+        "doj-search-remedies"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "doj-search-remedies",
+      "url": "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google",
+      "title": "Department of Justice Wins Significant Remedies Against Google",
+      "publisher": "US Department of Justice",
+      "published_on": "2025-09-02",
+      "accessed_on": "2026-10-13",
+      "kind": "competition-authority",
+      "locator": "Paragraphs on August 2024 liability judgment and September 2025 remedies; page updated 2026-04-15"
+    }
+  ],
+  "claims": [
+    {
+      "text": "米国司法省の公表によれば、連邦地裁は2024年8月、Googleによる検索の独占維持を認定した。 / DOJ reports a district-court finding of unlawful maintenance of a search monopoly.",
+      "source_refs": [
+        "doj-search-remedies"
+      ]
+    },
+    {
+      "text": "2025年9月の救済命令について司法省が公表している。 / DOJ reports remedies ordered in September 2025.",
+      "source_refs": [
+        "doj-search-remedies"
+      ]
+    }
+  ],
+  "classification_refs": [
+    "doj-search-remedies"
+  ],
+  "classification_basis": {
+    "authority": "US District Court for the District of Columbia, as reported by DOJ",
+    "court_name": "US District Court for the District of Columbia",
+    "decision_date": "2024-08-05",
+    "finding": "Attributed court finding of unlawful maintenance of a general-search monopoly",
+    "source_refs": [
+      "doj-search-remedies"
+    ]
+  },
+  "legal_status": {
+    "case_id": "United States et al. v. Google LLC, 1:20-cv-03010",
+    "finality": "unknown",
+    "note": "This source does not establish the current appellate disposition; no claim of final exhaustion of appeals."
+  },
+  "limitations": "Historical US market only. Current shares, appellate status and AI search substitution require separate evidence. No extrapolation to worldwide search.",
+  "reviewed_on": "2026-10-13",
+  "review_after_days": 30,
+  "shares": [],
+  "shares_complete": false
+}
