@@ -4,7 +4,11 @@
  :actor/status :r0
  :actor/adr "2606073100"
  :actor/canonical-format :edn
- :actor/purpose "Public-evidence chokepoint observation and structural route-around policy; never punishment or attack."
+ :actor/purpose "Evidence-linked global monopoly and oligopoly observation by region, relevant market and period; structural route-around remains separately gated."
+ :actor/bot-profile {:id "abaki" :path "hermes/profiles/abaki"
+                     :pipeline "scripts/market_watch.py" :reports "reports/README.md"
+                     :coverage "evidence/coverage-catalog.json"
+                     :runtime :python3-standard-library :qualification :evidence-report-pipeline-tested}
  :actor/gates
  [{:id :route-around-not-punishment}
   {:id :map-not-target}

@@ -1,0 +1,244 @@
+{
+  "schema": "abaki.findings.v1",
+  "as_of": "2026-10-13",
+  "findings": [
+    {
+      "id": "au-supermarket-retailing",
+      "region": "AU",
+      "industry": "G",
+      "market": "Supermarket retailing",
+      "geographic_scope": "Australia; national inquiry scope",
+      "period": "ACCC 2024-25 inquiry, final report February 2025",
+      "denominator": "No compatible individual market shares extracted",
+      "classification": "authority-described-oligopoly",
+      "entities": [
+        {
+          "id": "woolworths",
+          "name": "Woolworths Group",
+          "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+          "control_group": "woolworths",
+          "source_refs": [
+            "accc-supermarkets-final"
+          ]
+        },
+        {
+          "id": "coles",
+          "name": "Coles Group",
+          "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+          "control_group": "coles",
+          "source_refs": [
+            "accc-supermarkets-final"
+          ]
+        },
+        {
+          "id": "aldi",
+          "name": "ALDI Australia",
+          "identity_url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+          "control_group": "aldi",
+          "source_refs": [
+            "accc-supermarkets-final"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "accc-supermarkets-final",
+          "url": "https://www.accc.gov.au/media-release/accc-recommends-supermarket-reforms-to-provide-better-outcomes-for-consumers-and-suppliers",
+          "title": "ACCC recommends supermarket reforms to provide better outcomes for consumers and suppliers",
+          "publisher": "Australian Competition and Consumer Commission",
+          "published_on": "2025-03-21",
+          "accessed_on": "2026-10-13",
+          "kind": "competition-authority",
+          "locator": "Paragraph beginning oligopoly; final inquiry conclusions and barriers to entry"
+        }
+      ],
+      "claims": [
+        {
+          "text": "豪州競争当局はスーパー市場を寡占構造と説明し、ColesとWoolworthsによる支配と参入障壁を指摘した。 / ACCC describes an oligopoly dominated by Coles and Woolworths and barriers to entry.",
+          "source_refs": [
+            "accc-supermarkets-final"
+          ]
+        }
+      ],
+      "classification_refs": [
+        "accc-supermarkets-final"
+      ],
+      "classification_basis": {
+        "authority": "ACCC",
+        "decision_date": "2025-03-21",
+        "finding": "Supermarket sector described as an oligopoly in final inquiry publication",
+        "source_refs": [
+          "accc-supermarkets-final"
+        ]
+      },
+      "legal_status": {
+        "case_id": "",
+        "finality": "not-assessed",
+        "note": "Market inquiry, not a finding of unlawful oligopoly; separate pricing proceedings are not adjudicated here."
+      },
+      "limitations": "Local catchment markets may differ from the national inquiry. ALDI is included as a competitor, not declared to have committed an infringement.",
+      "reviewed_on": "2026-10-13",
+      "review_after_days": 30,
+      "shares": [],
+      "shares_complete": false,
+      "metrics": {
+        "hhi": null,
+        "cr2": null,
+        "cr4": null,
+        "note": "Shares unavailable; no numeric estimate."
+      },
+      "review_due": "2026-11-12",
+      "freshness": "reviewed-historical-snapshot",
+      "input_sha256": "790cd2a8c283b2e309aa4a419c604ee3de96120d719a7fe694ee048cd1aa8da4"
+    },
+    {
+      "id": "eea-google-publisher-ad-servers",
+      "region": "EEA",
+      "industry": "J",
+      "market": "Publisher ad servers (DFP)",
+      "geographic_scope": "European Economic Area",
+      "period": "European Commission decision of 5 September 2025",
+      "denominator": "No market shares extracted; publisher ad-server market only",
+      "classification": "authority-confirmed-dominance",
+      "entities": [
+        {
+          "id": "google",
+          "name": "Google (DFP)",
+          "identity_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/online-werbung-kommission-verhangt-fast-3-milliarden-euro-geldbusse-gegen-google-2025-09-08_de",
+          "control_group": "google",
+          "source_refs": [
+            "ec-adtech-decision"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "ec-adtech-decision",
+          "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/online-werbung-kommission-verhangt-fast-3-milliarden-euro-geldbusse-gegen-google-2025-09-08_de",
+          "title": "Online-Werbung: Kommission verhängt fast 3 Milliarden Euro Geldbuße gegen Google",
+          "publisher": "European Commission Representation in Germany",
+          "published_on": "2025-09-08",
+          "accessed_on": "2026-10-13",
+          "kind": "competition-authority",
+          "locator": "Section Googles beherrschende Stellung: publisher ad servers and programmatic buying tools; both EEA-wide"
+        }
+      ],
+      "claims": [
+        {
+          "text": "欧州委員会はEEAの出版社向け広告サーバー市場におけるGoogleの支配的地位と、その濫用を認定したと公表した。 / The Commission reports dominance and abuse in the EEA publisher ad-server market.",
+          "source_refs": [
+            "ec-adtech-decision"
+          ]
+        }
+      ],
+      "classification_refs": [
+        "ec-adtech-decision"
+      ],
+      "classification_basis": {
+        "authority": "European Commission",
+        "decision_date": "2025-09-05",
+        "finding": "Attributed Commission finding of dominance and abuse, AT.40670",
+        "source_refs": [
+          "ec-adtech-decision"
+        ]
+      },
+      "legal_status": {
+        "case_id": "AT.40670",
+        "finality": "unknown",
+        "note": "Administrative decision; the current appeal and remedy-compliance status is not established by this source."
+      },
+      "limitations": "Publisher ad servers only. Programmatic buying tools are a separate relevant market; all advertising must not be aggregated into this case.",
+      "reviewed_on": "2026-10-13",
+      "review_after_days": 30,
+      "shares": [],
+      "shares_complete": false,
+      "metrics": {
+        "hhi": null,
+        "cr2": null,
+        "cr4": null,
+        "note": "Shares unavailable; no numeric estimate."
+      },
+      "review_due": "2026-11-12",
+      "freshness": "reviewed-historical-snapshot",
+      "input_sha256": "fd9c140760f2c87fc109103595996214f920c3bcb7ae8a494cd7e10f1d0bc815"
+    },
+    {
+      "id": "us-google-general-search",
+      "region": "US",
+      "industry": "J",
+      "market": "General search services",
+      "geographic_scope": "United States",
+      "period": "Historical finding: August 2024 liability / September 2025 remedies",
+      "denominator": "Not measured in this case; general search service market",
+      "classification": "court-confirmed-monopoly",
+      "entities": [
+        {
+          "id": "google",
+          "name": "Google LLC",
+          "identity_url": "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google",
+          "control_group": "google",
+          "source_refs": [
+            "doj-search-remedies"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "doj-search-remedies",
+          "url": "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google",
+          "title": "Department of Justice Wins Significant Remedies Against Google",
+          "publisher": "US Department of Justice",
+          "published_on": "2025-09-02",
+          "accessed_on": "2026-10-13",
+          "kind": "competition-authority",
+          "locator": "Paragraphs on August 2024 liability judgment and September 2025 remedies; page updated 2026-04-15"
+        }
+      ],
+      "claims": [
+        {
+          "text": "米国司法省の公表によれば、連邦地裁は2024年8月、Googleによる検索の独占維持を認定した。 / DOJ reports a district-court finding of unlawful maintenance of a search monopoly.",
+          "source_refs": [
+            "doj-search-remedies"
+          ]
+        },
+        {
+          "text": "2025年9月の救済命令について司法省が公表している。 / DOJ reports remedies ordered in September 2025.",
+          "source_refs": [
+            "doj-search-remedies"
+          ]
+        }
+      ],
+      "classification_refs": [
+        "doj-search-remedies"
+      ],
+      "classification_basis": {
+        "authority": "US District Court for the District of Columbia, as reported by DOJ",
+        "court_name": "US District Court for the District of Columbia",
+        "decision_date": "2024-08-05",
+        "finding": "Attributed court finding of unlawful maintenance of a general-search monopoly",
+        "source_refs": [
+          "doj-search-remedies"
+        ]
+      },
+      "legal_status": {
+        "case_id": "United States et al. v. Google LLC, 1:20-cv-03010",
+        "finality": "unknown",
+        "note": "This source does not establish the current appellate disposition; no claim of final exhaustion of appeals."
+      },
+      "limitations": "Historical US market only. Current shares, appellate status and AI search substitution require separate evidence. No extrapolation to worldwide search.",
+      "reviewed_on": "2026-10-13",
+      "review_after_days": 30,
+      "shares": [],
+      "shares_complete": false,
+      "metrics": {
+        "hhi": null,
+        "cr2": null,
+        "cr4": null,
+        "note": "Shares unavailable; no numeric estimate."
+      },
+      "review_due": "2026-11-12",
+      "freshness": "reviewed-historical-snapshot",
+      "input_sha256": "0e9f823254b379620bea1f933e5eac05b148b2c1157c713b62e45f8f8fbe3755"
+    }
+  ]
+}
