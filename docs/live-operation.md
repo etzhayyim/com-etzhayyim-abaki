@@ -1,8 +1,15 @@
 # Itonami deployment and periodic publication
 
 The runtime profile is `abaki` in the owner's existing Hermes profile directory.
-Itonami's `profile adopt abaki` gives its existing Itonami gateway sole scheduler
-ownership, with Hermes' parked marker preventing a second scheduler. A job runs
+The initial run may be dispatched by Itonami's existing gateway. Long pre-run
+scripts are synchronous there, so deployment uses the dedicated
+`cloud.itonami.bot.abaki` launchd dispatcher afterward: it calls
+`itonami-agent -p abaki cron tick --force` every minute. The profile records
+`:runtime {:engine :itonami-agent :scheduler :launchd}`; the shared gateway skips
+it, and Hermes' parked marker prevents a second engine from ticking it. `--force`
+delegates only the due-check to this declared dispatcher; it grants no tools or
+publication authority. Existing per-profile locks and next_run_at prevent double
+dispatch. Other profile services are never restarted. A job runs
 every 6 hours, one relevant-market discovery or overdue-case refresh per run.
 The initial discovery starts at JP / information and communication; subsequent
 discoveries rotate through geographic scopes within each industry. The cursor
