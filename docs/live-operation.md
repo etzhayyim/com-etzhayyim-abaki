@@ -22,10 +22,11 @@ a host-only execution.json specifying `agent_bin`, `publication`, `staging` and
 the github forest. The publication worktree must use branch `abaki-reports` and
 remote `etzhayyim/com-etzhayyim-abaki`; it cannot carry unrelated WIP.
 
-The research turn runs through Itonami agent using a staging cwd, only web/file
+The research turn runs through Itonami agent using a staging cwd, only web
 tools, 18 tool calls / 900 seconds requested, and a runtime turn/budget limit.
-Credentials remain in the profile's existing host storage. The researcher cannot
-publish through terminal tools. A host publisher validates the proposal, fetches
+The deployed profile uses the existing loopback P2P rail without a credential
+copy or profile .env. No filesystem/Git/terminal schemas are exposed to the
+researcher. Its final JSON is written by the host. A host publisher validates the proposal, fetches
 each public original over HTTPS (DNS pinned at connect, redirects rechecked,
 no private hosts/proxies, 2 MiB cap), and requires its short verbatim supporting
 excerpt to occur in the original. This establishes source readback, not an
